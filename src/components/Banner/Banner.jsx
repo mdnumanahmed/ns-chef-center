@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="hero min-h-screen"
+        className="hero min-h-[600px]"
         style={{
           backgroundImage:
             "url(https://png.pngtree.com/background/20230516/original/pngtree-large-kitchen-with-several-chefs-working-in-it-picture-image_2617005.jpg)",

@@ -1,0 +1,78 @@
+
+[
+    {
+        "id": 101,
+        "recipe_img": "https://i.ibb.co.com/5Y8y29Z/spaghetti-carbonara.jpg",
+        "recipe_name": "Spaghetti Carbonara",
+        "short_description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+        "ingredients": [
+            "200g spaghetti",
+            "100g pancetta",
+            "2 large eggs",
+            "50g grated Parmesan cheese",
+            "Salt and pepper to taste"
+        ],
+        "preparing_time": "20 minutes",
+        "calories": 600
+    },
+    {
+        "id": 102,
+        "recipe_img": "https://i.ibb.co.com/3hmh7pY/chicken-curry.jpg",
+        "recipe_name": "Chicken Curry",
+        "short_description": "A flavorful and spicy chicken curry made with Indian spices and coconut milk.",
+        "ingredients": [
+            "500g chicken breast",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tbsp curry powder",
+            "400ml coconut milk"
+        ],
+        "preparing_time": "40 minutes",
+        "calories": 450
+    },
+    {
+        "id": 103,
+        "recipe_img": "https://i.ibb.co.com/MgXNG3g/vegan-buddha-bowl.jpg",
+        "recipe_name": "Vegan Buddha Bowl",
+        "short_description": "A colorful bowl filled with quinoa, roasted vegetables, avocado, and chickpeas.",
+        "ingredients": [
+            "1 cup quinoa",
+            "1 sweet potato, cubed",
+            "1 avocado, sliced",
+            "1/2 cup chickpeas",
+            "Handful of spinach"
+        ],
+        "preparing_time": "25 minutes",
+        "calories": 350
+    },
+    {
+        "id": 104,
+        "recipe_img": "https://i.ibb.co.com/R7L1RP1/beef-tacos.jpg",
+        "recipe_name": "Beef Tacos",
+        "short_description": "Mexican-style tacos filled with seasoned beef, cheese, and fresh toppings.",
+        "ingredients": [
+            "200g ground beef",
+            "1/2 cup shredded cheese",
+            "1/2 cup lettuce, chopped",
+            "4 taco shells",
+            "Salsa, to taste"
+        ],
+        "preparing_time": "15 minutes",
+        "calories": 400
+    },
+    {
+        "id": 105,
+        "recipe_img": "https://i.ibb.co.com/WynQXDj/greek-salad.jpg",
+        "recipe_name": "Greek Salad",
+        "short_description": "A fresh and healthy salad with cucumber, tomatoes, olives, feta cheese, and olive oil.",
+        "ingredients": [
+            "1 cucumber, chopped",
+            "2 tomatoes, chopped",
+            "1/4 cup black olives",
+            "1/4 cup feta cheese, crumbled",
+            "2 tbsp olive oil"
+        ],
+        "preparing_time": "10 minutes",
+        "calories": 200
+    }
+]
