@@ -5,6 +5,7 @@ import Cooking from "../Cooking/Cooking";
 const AllRecipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [wantCook, setWantCook] = useState([]);
+  const [cooking, setCooking] = useState([]);
 
   useEffect(() => {
     const loadRecipes = async () => {
@@ -20,6 +21,12 @@ const AllRecipes = () => {
     if (!isExists) {
       setWantCook([...wantCook, recipe]);
     }
+  };
+
+  const handlePreparing = (item) => {
+    setCooking([...cooking, item]);
+    const remaing = wantCook.filter((recipe) => recipe.id !== item.id);
+    setWantCook(remaing);
   };
   return (
     <div className="container mx-auto py-12">
@@ -45,7 +52,11 @@ const AllRecipes = () => {
           ))}
         </div>
         <div className="p-3 border-2 rounded-2xl">
-          <Cooking wantCook={wantCook} />
+          <Cooking
+            wantCook={wantCook}
+            handlePreparing={handlePreparing}
+            cooking={cooking}
+          />
         </div>
       </div>
     </div>
