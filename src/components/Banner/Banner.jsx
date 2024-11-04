@@ -12,12 +12,13 @@ const Banner = () => {
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-3xl">
             <h1 className="mb-5 text-5xl font-bold leading-relaxed">
-              Discover an exceptional cooking class tailored for you!
+              Welcome to NS Chef Corner!
             </h1>
             <p className="mb-5">
-              Learn and Master Basic Programming, Data Structures, Algorithm,
-              OOP, Database and solve 500+ coding problems to become an
-              exceptionally well world-class Programmer.
+              Learning to cook is more than just knowing how to follow a recipe.
+              We have all the tools and resources you need to become a more
+              skilled and confident cook. Tips, tricks, techniques, science deep
+              dives, and visual guides.
             </p>
             <button className="btn btn-primary">Explore Now</button>
             <button className=" ml-4 btn btn-outline text-white">
