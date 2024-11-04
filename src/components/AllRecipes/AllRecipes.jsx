@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import Recipe from "../Recipe/Recipe";
+import Cooking from "../Cooking/Cooking";
 
 const AllRecipes = () => {
   const [recipes, setRecipes] = useState([]);
+  const [wantCook, setWantCook] = useState([]);
 
   useEffect(() => {
     const loadRecipes = async () => {
@@ -12,6 +14,13 @@ const AllRecipes = () => {
     };
     loadRecipes();
   }, []);
+
+  const handleWantCooking = (recipe) => {
+    const isExists = wantCook.find((item) => item.id === recipe.id);
+    if (!isExists) {
+      setWantCook([...wantCook, recipe]);
+    }
+  };
   return (
     <div className="container mx-auto py-12">
       {/* Recipies Section Heading */}
@@ -25,13 +34,19 @@ const AllRecipes = () => {
           professional chefs since 2020.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-[66%_33%]">
+      <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
           {recipes.map((recipe) => (
-            <Recipe key={recipe.id} recipe={recipe} />
+            <Recipe
+              key={recipe.id}
+              recipe={recipe}
+              handleWantCooking={handleWantCooking}
+            />
           ))}
         </div>
-        <div>Cart</div>
+        <div className="p-3 border-2 rounded-2xl">
+          <Cooking wantCook={wantCook} />
+        </div>
       </div>
     </div>
   );

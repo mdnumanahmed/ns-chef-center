@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { AiOutlineFire } from "react-icons/ai";
 import { CiClock2 } from "react-icons/ci";
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleWantCooking }) => {
   const {
     calories,
     ingredients,
@@ -39,7 +39,10 @@ const Recipe = ({ recipe }) => {
           {calories} calories
         </div>
       </div>
-      <button className="btn bg-[#6125dd] hover:bg-[#41238c] text-white rounded-full px-5">
+      <button
+        onClick={() => handleWantCooking(recipe)}
+        className="btn bg-[#6125dd] hover:bg-[#41238c] text-white rounded-full px-5"
+      >
         Want to Cook
       </button>
     </div>
@@ -48,6 +51,7 @@ const Recipe = ({ recipe }) => {
 
 Recipe.propTypes = {
   recipe: PropTypes.object.isRequired,
+  handleWantCooking: PropTypes.func.isRequired,
 };
 
 export default Recipe;
